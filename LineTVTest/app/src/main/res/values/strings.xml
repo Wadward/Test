@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LineTVTest</string>
+    <string name="action_search">Search</string>
+    <string name="action_version">Version</string>
+    <string name="program_fragment_label">Program Fragment</string>
+    <string name="search_fragment_label">Search Fragment</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="error_network_no_connection">No network connection</string>
+    <string name="error_network_timeout">Network timeout</string>
+</resources>

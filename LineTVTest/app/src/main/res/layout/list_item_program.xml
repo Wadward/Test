@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/program_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:id="@+id/program_image"
+            android:layout_width="125dp"
+            android:layout_height="175dp"
+            android:transitionName="tImage" />
+
+        <TextView
+            android:id="@+id/program_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_program_detail_bar_height">
+
+            <TextView
+                android:id="@+id/program_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_toLeftOf="@+id/program_like_count"
+                android:drawableLeft="@drawable/ic_star_gray_18dp"
+                android:drawablePadding="@dimen/spacing_xsmall"
+                tools:text="12" />
+
+            <TextView
+                android:id="@+id/program_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_toLeftOf="@+id/program_bucket_count"
+                android:drawableLeft="@drawable/ic_favorite_gray_18dp"
+                android:drawablePadding="@dimen/spacing_xsmall"
+                tools:text="78" />
+
+            <TextView
+                android:id="@+id/program_bucket_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_inbox_gray_18dp"
+                android:drawablePadding="@dimen/spacing_xsmall"
+                tools:text="78" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
